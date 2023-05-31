@@ -73,7 +73,7 @@ def main():
 
     build_url = build.url
     logging.info(f"Build URL: {build_url}")
-    print(f'echo "build_url={build_url}" >> $GITHUB_OUTPUT')
+    print(f'echo "build_url={build_url}"  >> $GITHUB_OUTPUT')
     print(f"::notice title=build_url::{build_url}")
 
     if not wait:
